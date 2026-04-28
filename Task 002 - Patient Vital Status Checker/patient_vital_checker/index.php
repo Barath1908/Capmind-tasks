@@ -22,7 +22,7 @@ foreach ($patientsData as $record) {
  
   if (!isset($ruleMap[$type])) {
       echo "Patient : {$record['patient_name']}<br>";
-      echo "Vital   : $type\n";
+      echo "Vital   : $type<br>";
       echo "Status  : UNKNOWN — no rule defined for this vital type<br>";
       echo "----------------------------------------<br>";
       continue;
