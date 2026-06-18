@@ -8,9 +8,9 @@ function Patients() {
   const [search, setSearch] = useState("");
 
 
-  const handleSearch = useCallback((e) => {
+  const handleSearch = ((e) => {
     setSearch(e.target.value);
-  }, []);
+  });
 
   const handleClick = useCallback(() => {
     console.log("Button Clicked");
